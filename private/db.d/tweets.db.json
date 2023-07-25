@@ -1,0 +1,48 @@
+{
+    "table": "tweets",
+    "version": "1",
+    "fields": {
+        "id": {
+            "type": "bigint(20)",
+            "unsigned": true,
+            "null": false,
+            "default": null
+        },
+        "handle": {
+            "type": "varchar(25)",
+            "unsigned": false,
+            "null": false,
+            "default": ""
+        },
+        "author_id": {
+            "type": "bigint(20)",
+            "unsigned": true,
+            "null": false,
+            "default": 0
+        },
+        "tweet": {
+            "type": "varchar(1000)",
+            "null": false,
+            "default": ""
+        },
+		"tweet_time": {
+			"type": "datetime",
+			"null": true,
+			"default": null
+		},
+		"entities": {
+			"type": "json",
+			"null": true
+		}
+    },
+    "keys": {
+        "PRIMARY": {
+            "type": "PRIMARY",
+            "columns": [
+                {
+                    "column": "id"
+                }
+            ]
+        }
+    }
+}

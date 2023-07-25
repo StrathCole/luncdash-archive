@@ -1,0 +1,1 @@
+$.showMessageBeacon('{text}', 'error', false);

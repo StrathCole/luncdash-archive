@@ -1,0 +1,133 @@
+errorentry {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	margin: 100px auto 0;
+}
+
+errorinfo {
+	display: block;
+	padding: 5px 10px;
+	background-color: #900000;
+	color: #fff;
+	font-weight: bold;
+	border: solid 2px #000;
+}
+
+errornum:before {
+	content: '[';
+}
+
+errortype:before {
+	content: ' – ';
+}
+
+errortype:after {
+	content: ']';
+}
+
+errormsg {
+	display: block;
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+errormeta {
+	display: block;
+	padding: 5px 10px;
+	border: solid 1px #444;
+	background-color: #efefef;
+	color: #000;
+	font-size: 0.9em;
+}
+
+datetime {
+	display: block;
+	font-style: italic;
+}
+
+scriptname {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+scriptname:before {
+	font-weight: normal;
+	content: 'occured in ';
+}
+
+scriptlinenum {
+	font-weight: bold;
+}
+
+scriptlinenum:before {
+	content: 'on line ';
+}
+
+backtrace {
+	display: block;
+	table-layout: auto;
+	padding: 0;
+	border: solid 1px #000;
+}
+
+trace {
+	display: block;
+	border-bottom: solid 1px #ababab;
+}
+
+trace:nth-child(odd) {
+	background-color: #fafafa;
+}
+
+position, function {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+index, file, line, function {
+	display: block;
+	padding: 10px 15px;
+	font-size: 0.9em;
+	vertical-align: top;
+}
+
+index {
+	text-align: center;
+	width: 20px;
+}
+
+file {
+	width: 80%;
+	flex-shrink: 1;
+}
+
+line {
+	width: 20%;
+	text-align: right;
+}
+
+function {
+	background-color: #444;
+	margin: 0 10px 10px;
+	color: #eaeaea;
+}
+
+functioncall {
+	font-style: italic;
+}
+
+functionargs {
+	font-family: "Courier new", Courier, monospace;
+	word-wrap: break-word;
+}
+
+functionargs:before {
+	content: '(';
+}
+
+functionargs:after {
+	content: ')';
+}
