@@ -9,3 +9,5 @@ Also it requires a full node running locally due to the amount of queries done. 
 
 There is a file "PriceModule.inc.php" which has to contain a wallet address (placeholder is `terra1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`). This wallet is used to calculate APY on delegations. It needs a good amount of delegated coins and frequent withdrawals (but not autocompounds) ~once a week.
 After (un/re)delegating in between a manual withdrawal must be done in addition otherwise the numbers are totally off.
+
+The "TwitterModule.inc.php" needs api credentials for the Twitter API.
