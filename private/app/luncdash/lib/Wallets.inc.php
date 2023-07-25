@@ -80,8 +80,6 @@ class Wallets {
 			$entity = 'Conor Kenny';
 		} elseif($wallet === 'terra120ppepaj2lh5vreadx42wnjjznh55vvktwj679') {
 			$entity = 'Allnodes';
-		/*} elseif($wallet === 'terra1wwldp9k8mvkjfrzzmlfde6frymtyt693t7gfsx') {
-			$entity = 'LUNCDash.com';*/
 		} elseif($wallet === 'terra1n6d46e9adt3yzrc4gs7z3rcswa79uklzgzk88e' && stristr($memo, 'VisionaryDeFi') !== false) {
 			$entity = 'VisionaryDeFi';
 		} elseif($wallet === 'terra1sq6th05hdwwwxvymzytc93lvhjxyx4pkjurhgj' || ($wallet === 'terra1v74a5u6qsjuj4gu6at9yn4p35uctcz82f02fau' && stristr($memo, 'Lunatics Token') !== false)) {
