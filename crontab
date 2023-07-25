@@ -1,0 +1,8 @@
+10,40 * * * * luncdash /home/luncdash/update_wallets.sh
+*/10 * * * * luncdash /usr/bin/php /home/luncdash/supply.php ; /usr/bin/php /home/luncdash/pool.php ; /usr/bin/php /home/luncdash/wallets.php ; /usr/bin/php /home/luncdash/staking.php ; /usr/bin/php /home/luncdash/validators.php
+35 5,17 * * * luncdash /usr/bin/php /home/luncdash/fixwallets.php
+*/2 * * * * luncdash /usr/bin/php /var/www/penguins/web/app.php price update_tax > /dev/null 2>&1
+*/5 * * * * luncdash /usr/bin/php /home/luncdash/crawl_new.php ; /usr/bin/php /home/luncdash/holderdata.php
+*/5 * * * * luncdash /usr/bin/php /var/www/penguins/web/app.php twitter get_feeds >/dev/null 2>&1
+* * * * * luncdash /usr/bin/php /var/www/penguins/web/app.php price update_price > /dev/null 2>&1
+*/5 * * * * luncdash /usr/bin/php /var/www/penguins/web/app.php price update_apy > /dev/null 2>&1
