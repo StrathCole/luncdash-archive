@@ -1,4 +1,4 @@
-# luncdash
+# luncdash sunsetting
 luncdash.com code parts
 
 Not all codes can be published here due to usage of a proprietary PHP framework.
