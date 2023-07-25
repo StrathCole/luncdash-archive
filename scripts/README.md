@@ -1,0 +1,1 @@
+This directory contains scripts that are run by cron or manually to fill the actual database for luncdash
